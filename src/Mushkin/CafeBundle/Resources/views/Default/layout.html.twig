@@ -1,0 +1,33 @@
+{% extends "::base.html.twig" %}
+
+   {% block title %}Welcome!{% endblock %}
+    {% block stylesheets %}
+        {% stylesheets
+            '@MushkinCafeBundle/Resources/public/css/*'
+            '@MushkinCafeBundle/Resources/public/css/simple-sidebar.css'
+            filter='cssrewrite'
+        %}
+            <link href="{{ asset_url }}" type="text/css" rel="stylesheet" />
+        {% endstylesheets %}
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    {% endblock %}
+
+{% block body %}{% endblock %}
+
+{% block javascripts %}
+    {% javascripts
+        '@MushkinCafeBundle/Resources/public/js/*'
+    %}
+        <script src="{{ asset_url }}" type="text/javascript"></script>
+    {% endjavascripts %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+{% endblock %}
