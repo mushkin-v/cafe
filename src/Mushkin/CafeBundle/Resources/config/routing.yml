@@ -1,0 +1,3 @@
+mushkin_cafe_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: MushkinCafeBundle:Default:index }

@@ -1,0 +1,4 @@
+mushkin_cafe:
+    resource: "@MushkinCafeBundle/Resources/config/routing.yml"
+    prefix:   /
+
